@@ -1,12 +1,23 @@
 [root@pc001 ~]# yum -y install git
 [root@pc001 ~]# git clone https://github.com/账户名称/仓库名称
-#clone指令用于将服务器仓库中的资料打包下载到本地
+		clone指令用于将服务器仓库中的资料打包下载到本地
+
 [root@pc001 ~]# cd 仓库名称
 [root@pc001 ~]# 任意修改文件，或新建文件
 [root@pc001 ~]# git add .
-#add添加新文件
+		#add添加新文件
+
 [root@pc001 ~]# git commit -m "test"
 [root@pc001 ~]# git push
-#commit和push实现提交代码的功能
+		#commit和push实现提交代码的功能
+
 [root@pc001 ~]# git pull
-#pull可以从githuab服务器拉取数据到本地
+		#pull可以从githuab服务器拉取数据到本地
+
+删除并提交
+	1   git commit -a 
+			输入更改信息
+	2   git push
+	3   git用户: pangzk
+	4   git密码: kingandme9608+++
+		

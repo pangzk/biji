@@ -1,0 +1,9 @@
+
+17.查看http的并发请求数与其TCP连接状态？
+netstat -n | awk ‘/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}’
+还有ulimit -n 查看linux系统打开最大的文件描述符，这里默认1024
+不修改这里web服务器修改再大也没用，若要用就修改很几个办法，这里说其中一个：
+修改/etc/security/limits.conf
+soft nofile 10240
+hard nofile 10240
+重启后生效

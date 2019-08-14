@@ -1,0 +1,49 @@
+		create databases tts character set utf8mb4;
+		DEFAULT  CHARSET=utf8
+
+专业术语:
+		DB (DataBase)     数据库
+		DBMS (DataBase Management System)   数据库管理系统
+		DBS (DataBase System)   数据库系统
+	
+常用的SQL命令分类
+		DDL  数据定义语言 如:create  alter  drop
+		DML  数据操作语言 如:insert  update  delete
+		DCL  数据控制语言 如:grant  revoke
+		DTL  数据事物语言 如:commit  rollback  savepoint
+设置密码
+		grant select on Contacts.* to Raikon@localhost identified by
+		‘atenorth’;
+
+用初始密码登录
+ 		mysql -hlocalhost -uroot -p'B5XgQLFAt;dm'
+
+过滤初始密码
+		grep  "password" /var/log/mysqld.log 
+
+修改密码
+		alter user root@"localhost" identified by "123qqq...A";
+	
+修改密码策略, 修改密码长度
+		set global validate_password_policy=0;
+		set global validate_password_length=6;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
